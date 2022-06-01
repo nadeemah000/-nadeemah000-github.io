@@ -7,6 +7,15 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    
 <!--webpage of our favorite dog breeds and information on them to show our love for them :)-->
     <title>HTML webpage of dog breeds</title>
     <!--embedded style sheet (maya)-->
@@ -16,17 +25,18 @@ html{
   scroll-behavior: smooth;
 }
       /*using id span to add color to text (maya)*/ /*Mark's comment: try not to use the a name that is the name of an element! so rename span to something else. Oh and I see that you've done this for table, img, and h2 also! rename those, too.*/
+        /*ids have been renamed (maya)*/
       #affectionate{
         color:#FF4500;
       }
       /*adding background color, margin and padding values, and font style to corgi div (maya)*/
-      .corgi{
+      .corgisection{
         background-color:beige;
         
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       }
       /*adding font-style, border properties, and alignment to table (maya)*/
-      #care{
+      .care{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         border: solid black 2px;
         margin-left: auto;
@@ -103,108 +113,9 @@ html{
 a{
   text-decoration:none;
 }
-#tableheader{
+.tableheader{
 text-align: center;
 }
-    </style>
-<html lang="en">
-  <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
-  <body> 
-    <div class="container mt-3">
-      <div class="p-2 bg-info">
-
-    </head>  <!--Mark's comment 5/15: Each web document should only have ONE html, head, title, and body tag. It looks like you have TWO html, head, and body tags, probably an error from copy-paste. Please delete the duplicates.-->
-    <body>
-      <!--navbar to navigate to different sections of the page-->
-      <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="maxwidth">
-        <div class="navbarheader">
-      <a class="navbar-brand" href="#"> DOG BREEDS</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li><a href="#corgi">Corgis</a></li>
-          <li><a href="#dobermans">Dobermans</a></li>
-          <li><a href="#pug">Pugs</a></li>
-          <li><a href="#germanshepherd">German Shepherds</a></li>
-        </ul>
-        </div>
-    </nav>-->
-    <nav class="navbar bg-dark">
-      <div class="max-width">
-          <div class="logo"><a href="#"><span>Dog Breeds</span></a></div>
-           <ul class="menu">
-        <li><a href="#corgi">Corgis</a></li>
-        <li><a href="#dobermans">Dobermans</a></li>
-        <li><a href="#pug">Pugs</a></li>
-        <li><a href="#germanshepherd">German Shepherds</a></li>
-      </ul>
-      </div>
-  </nav>
-
-<!--div for corgi dog breed (maya)-->
-<div class="corgi" id="corgi"> <!--Mark's comment 5/15: Try not to have classes and ids use the same word. It's confusing. But, also, you're using the id here for the anchor tag in the navbar. That's fine, but I think I'd name it something like anchor-corgi so it's clear what you're using it for.-->
-<!--header to name dog breed (maya)-->    
-    <h2 id="corg">Pembroke Welsh Corgi</h2>
-<!--img of corgi + anchor tag linking to site with info on corgis (maya)-->    
-    <a href="https://www.akc.org/dog-breeds/pembroke-welsh-corgi/"><img src="https://www.thefarmersdog.com/digest/wp-content/uploads/2021/12/corgi-top-1400x871.jpg" alt="corgi" title="corgi" id="photo" width="50%"></a><!--Mark's comment: you have an id attribute in the img element, but no corresponding #img style. There is a .img style which specifies a class not id, but also don't name classes and ids after tag names. Did you all read the first few entries for CSS on w3schools? You should. This one in particular may help clarify: https://www.w3schools.com/css/css_selectors.asp-->
-<!--paragraph description of corgi (maya)-->   
-<h2 id="corg">Pembroke Welsh Corgi</h2>
-    <p id="para">Corgis are <span id="affectionate">affectionate, cute, and friendly</span> dogs that have strong athletic capabilities. 
-        They weigh 27 to 30 pounds and come in a range of colors from red, sable, fawn, black, 
-        tan, and white. </p> 
-<!--list of traits, source:https://www.akc.org/dog-breeds/pembroke-welsh-corgi/ (maya)-->
-    <ol>
-        <li><strong>Family life</strong></li>
-        <ul>
-            <li><em>Good with children</em></li>
-            <li><em>Affectionate with family</em></li>
-            <li><em>Good with other dogs</em></li>
-        </ul>
-        <li><strong>Physical</strong></li>
-        <ul>
-            <li><em>Shedding level high</em></li>
-            <li><em>Low drooling level</em></li>
-            <li><em>Coat grooming moderate</em></li>
-        </ul>
-        <li><strong>Social</strong></li>
-        <ul>
-            <li><em>Open to strangers</em></li>
-            <li><em>Very playful</em></li>
-            <li><em>Very protective</em></li>
-        </ul>
-    </ol>
- 
-    <!--table of info on how to care for corgis (maya)-->
-    <h2 id="tableheader">Corgi Care</h2> <!--Mark's comment 5/15: Use classes for general styling of different sections and id for very specific sections, generally if you're going to refer to those sections with code like Javascript coming up.-->
-    <table id="care">
-        <tr>
-          <th>Health</th>
-          <th>Grooming</th>
-          <th>Exercise</th>
-        </tr>
-        <tr>
-          <td>Hip evaluation, ophthalmologist evaluation</td>
-          <td>Daily combover, regular nail trimming</td>
-        <td>Moderate daily exercise, long walks</td>
-        </tr>
-      </table>
-      </div>
-    </div>
-
-</div>
-</body><!--Mark's comment 5/15: see my previous comments about html, head, and body tags! Also, for the style block on line 207, I expect you to make changes based on my comments!-->
-</html>
-
-    <body>
-    <style>/*Mark's comment: Put style blocks in the head element at the top of the page, but, actually, you should try to only have one style block, so merge this with the one up top. There may be some conflicts here as you're specifying styles for generic elements. Does everybody want their sections to be styled the same way?*/
         p.center {
             text-align: center;
             color: rgb(10, 78, 145);
@@ -263,23 +174,173 @@ img {
   background-color: #04AA6D;
   color: white;
 }
-        </style> 
-     <html lang="en">
-      <head>
-        <title>Bootstrap Example</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-      </head>
-      <body> 
+        /*.Pug allows for both the image and text to be in a nice and organized manner in a similar and coehsive manner to Maya*/
+    .Pug {
+      background-color: beige;
+      margin: 70px;
+      padding: 20px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    /*the code below allows for the text below the image of the pug to be more noticeble and in another color*/
+    #caption {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #5e2e07;
+      text-decoration-line: overline underline;
+    }
+    /*the code below allows for the table to be formatted in a more pleasant way*/
+    #pug {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    #pug td,
+    #pug th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    #pug tr:nth-child(odd) {
+      background-color: #ffbe63;
+    }
+
+    #pug tr:nth-child(even) {
+      background-color: #b8843d;
+    }
+
+    #pug tr:nth-child(even) {
+      color: white;
+    }
+
+    #pug tr:hover {
+      background-color: #ffe14d;
+    }
+
+    #pug th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #ffe14d;
+      color: white;
+    }
+        /*Changes the color of the text surrounded by the span command (Ashton P.)*/
+      #spanCSS{
+        color:rgb(255, 0, 0); 
+      }
+      /*Makes the general formatting for the German Shepherd section (Ashton P.)*/
+      .GermanShepherd{
+        background-color:rgb(164, 214, 243);
+        margin:70px;
+        padding:20px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      /*Formats the table for the german shepherd portion (Ashton P.)*/
+      #tableCSS{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: solid black 2px;
+        text-align: center;
+      }
+      /*Makes it so the opacity of the image is slightly lowered when hovering over the link (Ashton P.)*/
+      #image:hover{
+        opacity:70%;
+      }
+      /*A bit of formatting for the paragraph (Ashton P.)*/
+      #pCSS{
+        margin:50px;
+      }
+      /*A bit of formatting for the header*/
+      #h2CSS{
+        padding:20px;
+      }
+    </style>
+    </head>
+  <body> 
+    <div class="container mt-3">
+      <div class="p-2 bg-info">
+
+     <!--Mark's comment 5/15: Each web document should only have ONE html, head, title, and body tag. It looks like you have TWO html, head, and body tags, probably an error from copy-paste. Please delete the duplicates.-->
+    <!--removed extra html head and body tags(maya)-->
+      
+    <nav class="navbar bg-dark">
+      <div class="max-width">
+          <div class="logo"><a href="#"><span>Dog Breeds</span></a></div>
+           <ul class="menu">
+        <li><a href="#corgi">Corgis</a></li>
+        <li><a href="#dobermans">Dobermans</a></li>
+        <li><a href="#pug">Pugs</a></li>
+        <li><a href="#germanshepherd">German Shepherds</a></li>
+      </ul>
+      </div>
+  </nav>
+
+<!--div for corgi dog breed (maya)-->
+<!--renamed class name (maya)-->
+<div class="corgisection" id="corgi"> <!--Mark's comment 5/15: Try not to have classes and ids use the same word. It's confusing. But, also, you're using the id here for the anchor tag in the navbar. That's fine, but I think I'd name it something like anchor-corgi so it's clear what you're using it for.-->
+<!--header to name dog breed (maya)-->    
+    <h2 id="corg">Pembroke Welsh Corgi</h2>
+<!--img of corgi + anchor tag linking to site with info on corgis (maya)-->    
+    <a href="https://www.akc.org/dog-breeds/pembroke-welsh-corgi/"><img src="https://www.thefarmersdog.com/digest/wp-content/uploads/2021/12/corgi-top-1400x871.jpg" alt="corgi" title="corgi" id="photo" width="50%"></a><!--Mark's comment: you have an id attribute in the img element, but no corresponding #img style. There is a .img style which specifies a class not id, but also don't name classes and ids after tag names. Did you all read the first few entries for CSS on w3schools? You should. This one in particular may help clarify: https://www.w3schools.com/css/css_selectors.asp-->
+<!--paragraph description of corgi (maya)-->   
+<h2 id="corg">Pembroke Welsh Corgi</h2>
+    <p id="para">Corgis are <span id="affectionate">affectionate, cute, and friendly</span> dogs that have strong athletic capabilities. 
+        They weigh 27 to 30 pounds and come in a range of colors from red, sable, fawn, black, 
+        tan, and white. </p> 
+<!--list of traits, source:https://www.akc.org/dog-breeds/pembroke-welsh-corgi/ (maya)-->
+    <ol>
+        <li><strong>Family life</strong></li>
+        <ul>
+            <li><em>Good with children</em></li>
+            <li><em>Affectionate with family</em></li>
+            <li><em>Good with other dogs</em></li>
+        </ul>
+        <li><strong>Physical</strong></li>
+        <ul>
+            <li><em>Shedding level high</em></li>
+            <li><em>Low drooling level</em></li>
+            <li><em>Coat grooming moderate</em></li>
+        </ul>
+        <li><strong>Social</strong></li>
+        <ul>
+            <li><em>Open to strangers</em></li>
+            <li><em>Very playful</em></li>
+            <li><em>Very protective</em></li>
+        </ul>
+    </ol>
+ 
+    <!--table of info on how to care for corgis (maya)-->
+    <!--switched from id to class(maya)-->
+    <h2 class="tableheader">Corgi Care</h2> <!--Mark's comment 5/15: Use classes for general styling of different sections and id for very specific sections, generally if you're going to refer to those sections with code like Javascript coming up.-->
+    <table class="care">
+        <tr>
+          <th>Health</th>
+          <th>Grooming</th>
+          <th>Exercise</th>
+        </tr>
+        <tr>
+          <td>Hip evaluation, ophthalmologist evaluation</td>
+          <td>Daily combover, regular nail trimming</td>
+        <td>Moderate daily exercise, long walks</td>
+        </tr>
+      </table>
+      </div>
+    </div>
+
+</div>
+<!--deleted extra body tag(maya)-->
+<!--Mark's comment 5/15: see my previous comments about html, head, and body tags! Also, for the style block on line 207, I expect you to make changes based on my comments!-->
+
+
+   
+    <!--/*Mark's comment: Put style blocks in the head element at the top of the page, but, actually, you should try to only have one style block, so merge this with the one up top. There may be some conflicts here as you're specifying styles for generic elements. Does everybody want their sections to be styled the same way?*/-->
+        <!--removed extra tags and moved style to the block at the top(maya)-->
+        
+        
         <div class="container mt-3">
           <div class="p-2 bg-info">
   
        <div class="center" id="dobermans"><h2>Dobermans
-            <link rel="stylesheet" href="Style.css"><!--Mark's comment: put link tags into the head tag up top. But also, there does not appear to be a file named Style.css within your folder so this links to nothing.--><!--Mark's comment 5/15: You all didn't read my comments from before, did you?-->
+        <!--Mark's comment: put link tags into the head tag up top. But also, there does not appear to be a file named Style.css within your folder so this links to nothing.--><!--Mark's comment 5/15: You all didn't read my comments from before, did you?-->
+           <!--deleted stylesheet link(maya)-->
         </h2></div>
         <img src="https://media-be.chewy.com/wp-content/uploads/2021/06/02102805/Doberman-Pinscher_Featured-Image-1024x615.jpg" alt="Big dog" title="Cute Doggo!" width="50%">
 <p class="center"><strong>The Dobermann or also known as the Doberman Pinscher is a medium to large sized dog that was discovered 
@@ -353,73 +414,11 @@ equal the height. The length of head, neck and legs should be porportionate to t
 <p><b><a href="https://www.akc.org/dog-breeds/doberman-pinscher/" target="_blank">Learn more about Dobermans</a></b></p>
 </div>
 </div>
-      </body>
 
  <!--div for pug dog breed (Alex)-->
  <div class="Pug" id="pug"><!--Mark's comment 5/15: I stopped reviewing after seeing yet another style block, followed by another html tag...-->
-  <style>
-/*.Pug allows for both the image and text to be in a nice and organized manner in a similar and coehsive manner to Maya*/
-    .Pug {
-      background-color: beige;
-      margin: 70px;
-      padding: 20px;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    /*the code below allows for the text below the image of the pug to be more noticeble and in another color*/
-    #caption {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #5e2e07;
-      text-decoration-line: overline underline;
-    }
-    /*the code below allows for the table to be formatted in a more pleasant way*/
-    #pug {
-      font-family: Arial, Helvetica, sans-serif;
-      border-collapse: collapse;
-      width: 100%;
-    }
-
-    #pug td,
-    #pug th {
-      border: 1px solid #ddd;
-      padding: 8px;
-    }
-
-    #pug tr:nth-child(odd) {
-      background-color: #ffbe63;
-    }
-
-    #pug tr:nth-child(even) {
-      background-color: #b8843d;
-    }
-
-    #pug tr:nth-child(even) {
-      color: white;
-    }
-
-    #pug tr:hover {
-      background-color: #ffe14d;
-    }
-
-    #pug th {
-      padding-top: 12px;
-      padding-bottom: 12px;
-      text-align: left;
-      background-color: #ffe14d;
-      color: white;
-    }
-  </style>
-
-<html lang="en">
-  <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
-  <body> 
+     
+<!--removed extra tags and moved style to top block(maya)-->
     <div class="container mt-3">
       <div class="p-2 bg-info">
     <!--header to name dog breed (Alex)-->
@@ -480,50 +479,8 @@ equal the height. The length of head, neck and legs should be porportionate to t
 <a href="https://www.akc.org/dog-breeds/pug/">Original Source of Facts!</a>
 </div>
 </div>
-</body>
-
-    <style>
-      /*Changes the color of the text surrounded by the span command (Ashton P.)*/
-      #spanCSS{
-        color:rgb(255, 0, 0); 
-      }
-      /*Makes the general formatting for the German Shepherd section (Ashton P.)*/
-      .GermanShepherd{
-        background-color:rgb(164, 214, 243);
-        margin:70px;
-        padding:20px;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      }
-      /*Formats the table for the german shepherd portion (Ashton P.)*/
-      #tableCSS{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        border: solid black 2px;
-        text-align: center;
-      }
-      /*Makes it so the opacity of the image is slightly lowered when hovering over the link (Ashton P.)*/
-      #image:hover{
-        opacity:70%;
-      }
-      /*A bit of formatting for the paragraph (Ashton P.)*/
-      #pCSS{
-        margin:50px;
-      }
-      /*A bit of formatting for the header*/
-      #h2CSS{
-        padding:20px;
-      }
-    </style>
-<html lang="en">
-  <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
-  <body> 
+<!--removed extra tags and moved style to top block(maya)-->
+   
     <div class="container mt-3">
       <div class="p-2 bg-info">
 
@@ -585,3 +542,4 @@ equal the height. The length of head, neck and legs should be porportionate to t
 
 
    </html>
+     
