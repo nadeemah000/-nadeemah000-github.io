@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--referencing stylesheets-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+<!--webpage of our favorite dog breeds and information on them to show our love for them :)-->
+    <title>HTML webpage of dog breeds</title>
+    <!--embedded style sheet (maya)-->
+    <style>
+      /*adding scroll effect*/
+html{
+  scroll-behavior: smooth;
+}
+      /*using id span to add color to text (maya)*/ /*Mark's comment: try not to use the a name that is the name of an element! so rename span to something else. Oh and I see that you've done this for table, img, and h2 also! rename those, too.*/
+        /*ids have been renamed (maya)*/
+      #affectionate{
+        color:#FF4500;
+      }
+      /*adding background color, margin and padding values, and font style to corgi div (maya)*/
+      .corgisection{
+        background-color:beige;
+        
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      /*adding font-style, border properties, and alignment to table (maya)*/
+      .care{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: solid black 2px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      /*creating opacity effect when hovering image (maya)*/
+      #photo:hover{
+        opacity:70%;
+      }
+      /*adjusting margin for paragraph (maya)*/
+      #para{
+        margin:50px;
+      }
+      /*adjusting padding for title (maya)*/
+      #corg{
+        padding:20px;
+        text-align: center;
+      }
+    /*nav bar styling*/
+    .navbar{
+    position: fixed;
+    width: 100%;
+
+
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.navbar .logo a{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    padding:20px;
+}
+
+.navbar.sticky .logo a{
+    color: #fff;
+}
+/*.navbar.sticky .logo a span{
+    color:#A882DA;
+    transition: all 0.3s ease;
+} */
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+
+}
+.navbar .menu li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+
+}
+.navbar .menu li a:hover{
+    color:grey;
+
+}
+.navbar.sticky .menu li a{
+    color:#fff;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .menu li a:hover{
+    color:#2A1545;
+    transition: all 0.3s ease;
+}
+a{
+  text-decoration:none;
+}
+.tableheader{
+text-align: center;
+}
+        p.center {
+            text-align: center;
+            color: rgb(10, 78, 145);
+        }
+        p.large{ 
+        font-size: 200%;
+        }
+body{ 
+    background-color:lightblue;
+}
+ #Subtitle {
+     background-color: darkseagreen;
+ }
+ .myDiv {
+  border: 5px outset darkblue;
+  background-color: darkseagreen;    
+  text-align: center;
+}
+/*can someone make this hover tag more specific, its affecting other anchor tags*/
+/*a:hover {
+  background-color: pink;
+}*/
+h2.b {
+  visibility: hidden;
+}
+a {
+  color: seagreen;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.center {
+  text-align: center;
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+        /*.Pug allows for both the image and text to be in a nice and organized manner in a similar and coehsive manner to Maya*/
+    .Pug {
+      background-color: beige;
+      margin: 70px;
+      padding: 20px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    /*the code below allows for the text below the image of the pug to be more noticeble and in another color*/
+    #caption {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #5e2e07;
+      text-decoration-line: overline underline;
+    }
+    /*the code below allows for the table to be formatted in a more pleasant way*/
+    #pug {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    #pug td,
+    #pug th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    #pug tr:nth-child(odd) {
+      background-color: #ffbe63;
+    }
+
+    #pug tr:nth-child(even) {
+      background-color: #b8843d;
+    }
+
+    #pug tr:nth-child(even) {
+      color: white;
+    }
+
+    #pug tr:hover {
+      background-color: #ffe14d;
+    }
+
+    #pug th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #ffe14d;
+      color: white;
+    }
+        /*Changes the color of the text surrounded by the span command (Ashton P.)*/
+      #spanCSS{
+        color:rgb(255, 0, 0); 
+      }
+      /*Makes the general formatting for the German Shepherd section (Ashton P.)*/
+      .GermanShepherd{
+        background-color:rgb(164, 214, 243);
+        margin:70px;
+        padding:20px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      /*Formats the table for the german shepherd portion (Ashton P.)*/
+      #tableCSS{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: solid black 2px;
+        text-align: center;
+      }
+      /*Makes it so the opacity of the image is slightly lowered when hovering over the link (Ashton P.)*/
+      #image:hover{
+        opacity:70%;
+      }
+      /*A bit of formatting for the paragraph (Ashton P.)*/
+      #pCSS{
+        margin:50px;
+      }
+      /*A bit of formatting for the header*/
+      #h2CSS{
+        padding:20px;
+      }
+
+
+
+
+    </style>
+
+<script>
+
+        
+
+        function buildQuiz(){ // function to build the quiz
+
+        // variable to store the HTML output
+        const output = [];
+
+        
+        myQuestions.forEach( // for each question this code runs
+            (currentQuestion, questionNumber) => {
+
+                //variable to store the list of possible answers
+                const answers = [];
+
+                for(letter in currentQuestion.answers){
+                    
+                    answers.push(
+                        `<label> 
+                        <input type="radio" name="question${questionNumber}" value="${letter}">
+                        ${letter}:
+                        ${currentQuestion.answers[letter]} 
+                        </label>`
+                    );
+                }
+
+                output.push(
+                    `<div class="question"> ${currentQuestion.question} </div>
+                    <div class="answers"> ${answers.join('')} </div>`
+                );
+            }
+        );
+
+
+        quizContainer.innerHTML = output.join('');
+
+        }
+
+        function showResults(){ // Function to show the results
+
+            // gather answers from our quiz
+            const answerContainers = quizContainer.querySelectorAll('.answers');
+
+            // keep track of user's answers
+            let numCorrect = 0;
+
+            // for each question this code runs
+            myQuestions.forEach ( (currentQuestion, questionsNumber) => {
+
+                //find selected answer
+                const answerContainer = answerContainers[questionNumber];
+                const selector = `input[name=question${questionNumber}]:checked`;
+                const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+                // if answer is correct
+                if(userAnswer === currentQuestion.correctAnswer){
+
+                    // add correct answer to numCorrect
+                    numCorrect++;
+
+                    //color the answers green
+                    answerContainers[questionNumber].style.color = 'lightgreen';
+                }
+
+                // if the answer is wrong or blank
+                else{
+                    //color the answers red
+                    answerContainers[questionNumber].style.color = 'red';
+                }
+
+                // show number of correct answers out of total
+                resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+            })
+        }
+
+        
+        const quizContainer = document.getElementById('quiz');
+        const resultsContainer = document.getElementById('results');
+        const submitButton = document.getElementById('submit');
+        // Array to store the questions and answers for our quiz
+        const myQuestions = [
+            {
+                question: "How many times do you need to groom a German Shepherd?",
+                answers: {
+                    a: "Monthly",
+                    b: "Bi-weekly",
+                    c: "Every Few Days"
+                },
+                correctAnswer: "c"
+            },
+            {
+                question: "How many cups does a three month old male Doberman eat?",
+                answers: {
+                    a: "1 to 2.5 cups",
+                    b: "4 to 7 cups",
+                    c: "3 to 6 cups"
+                },
+                correctAnswer: "a"
+            },
+            {
+                question: "On average, how much do adult Corgis weigh?",
+                answers: {
+                    a: "20 to 23 pounds",
+                    b: "27 to 30 pounds",
+                    c: "33 to 36 pounds"
+                },
+                correctAnswer: "b"
+            },
+            {
+                question: "How protective are Pugs?",
+                answers: {
+                    a: "Very protective",
+                    b: "Somewhat protective",
+                    c: "Not very protective"
+                },
+                correctAnswer: "b"
+            }
+        ];
+
+
+        buildQuiz();
+
+        submitButton.addEventListener('click', showResults); // Button to show quiz results
+
+    </script>
+
+    </head>
+
+    <body>
+        <div id="quiz"></div>
+        <button id="submit">Submit Quiz</button>
+        <div id="results"></div>
+    </body>
+
+    
+
+    </html>
