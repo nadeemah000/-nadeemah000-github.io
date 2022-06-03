@@ -57,9 +57,7 @@ html{
       }
     /*nav bar styling*/
     .navbar{
-    position: fixed;
     width: 100%;
-
 
 }
 
@@ -97,10 +95,12 @@ html{
     margin-left: 25px;
     margin-bottom: 20px;
     transition: color 0.3s ease;
+    text-decoration:none;
 
 }
 .navbar .menu li a:hover{
     color:grey;
+    text-decoration:none;
 
 }
 .navbar.sticky .menu li a{
@@ -272,6 +272,10 @@ img {
         font-size: 20px;
         margin-bottom: 20px;
       }
+      .content{
+        margin-left:400px;
+        margin-right:400px;
+      }
     </style>
 
 
@@ -293,13 +297,13 @@ img {
         </ul>
         </div>
     </nav>
-
+        <div class="content">
         <div id="quiz"></div>
 
         <button id="submit">Submit Quiz</button>
 
         <div id="results"></div>
-        
+      </div>
         <script>
 
         function buildQuiz(){ // function to build the quiz
