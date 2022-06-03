@@ -260,9 +260,33 @@ img {
 
     </style>
 
-<script>
 
+
+    </head>
+
+    <body>
+      <!--navbar added(maya)-->
+      <nav class="navbar bg-dark">
+        <div class="max-width">
+            <div class="logo"><a href="index.html"><span>Dog Breeds</span></a></div>
+             <ul class="menu">
+          <li><a href="index.html#corgi">Corgis</a></li>
+          <li><a href="index.html#dobermans">Dobermans</a></li>
+          <li><a href="index.html#pug">Pugs</a></li>
+          <li><a href="index.html#germanshepherd">German Shepherds</a></li>
+          <!--added "quiz" to navbar (maya)-->
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+        </div>
+    </nav>
+
+        <div id="quiz"></div>
+
+        <button id="submit">Submit Quiz</button>
+
+        <div id="results"></div>
         
+        <script>
 
         function buildQuiz(){ // function to build the quiz
 
@@ -386,27 +410,6 @@ img {
         submitButton.addEventListener('click', showResults); // Button to show quiz results
 
     </script>
-
-    </head>
-
-    <body>
-      <!--navbar added(maya)-->
-      <nav class="navbar bg-dark">
-        <div class="max-width">
-            <div class="logo"><a href="index.html"><span>Dog Breeds</span></a></div>
-             <ul class="menu">
-          <li><a href="index.html#corgi">Corgis</a></li>
-          <li><a href="index.html#dobermans">Dobermans</a></li>
-          <li><a href="index.html#pug">Pugs</a></li>
-          <li><a href="index.html#germanshepherd">German Shepherds</a></li>
-          <!--added "quiz" to navbar (maya)-->
-          <li><a href="quiz.html" id="quiz">Quiz</a></li>
-        </ul>
-        </div>
-    </nav>
-        <div id="quiz"></div>
-        <button id="submit">Submit Quiz</button>
-        <div id="results"></div>
     </body>
 
     
