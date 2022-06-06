@@ -54,11 +54,14 @@ html{
       #corg{
         padding:20px;
         text-align: center;
+        margin-top:25px;
       }
     /*nav bar styling*/
+    /*moving bar up a bit(maya)*/
     .navbar{
     position: fixed;
     width: 100%;
+    margin-top:-20px;
 
 
 }
@@ -76,6 +79,7 @@ html{
     font-size: 35px;
     font-weight: 600;
     padding:20px;
+    text-decoration:none;
 }
 
 .navbar.sticky .logo a{
@@ -96,6 +100,7 @@ html{
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
+    text-decoration: none;
 
 }
 .navbar .menu li a:hover{
@@ -255,12 +260,7 @@ img {
     </style>
     </head>
   <body> 
-    <div class="container mt-3">
-      <div class="p-2 bg-info">
-
-     <!--Mark's comment 5/15: Each web document should only have ONE html, head, title, and body tag. It looks like you have TWO html, head, and body tags, probably an error from copy-paste. Please delete the duplicates.-->
-    <!--removed extra html head and body tags(maya)-->
-      
+    <!--moved navbar outside of container(maya)-->
     <nav class="navbar bg-dark">
       <div class="max-width">
           <div class="logo"><a href="#"><span>Dog Breeds</span></a></div>
@@ -269,9 +269,18 @@ img {
         <li><a href="#dobermans">Dobermans</a></li>
         <li><a href="#pug">Pugs</a></li>
         <li><a href="#germanshepherd">German Shepherds</a></li>
+        <!--added "quiz" to navbar (maya)-->
+        <li><a href="quiz.html">Quiz</a></li>
       </ul>
       </div>
   </nav>
+    <div class="container mt-3">
+      <div class="p-2 bg-info">
+
+     <!--Mark's comment 5/15: Each web document should only have ONE html, head, title, and body tag. It looks like you have TWO html, head, and body tags, probably an error from copy-paste. Please delete the duplicates.-->
+    <!--removed extra html head and body tags(maya)-->
+      
+    
 
 <!--div for corgi dog breed (maya)-->
 <!--renamed class name (maya)-->
@@ -281,7 +290,6 @@ img {
 <!--img of corgi + anchor tag linking to site with info on corgis (maya)-->    
     <a href="https://www.akc.org/dog-breeds/pembroke-welsh-corgi/"><img src="https://www.thefarmersdog.com/digest/wp-content/uploads/2021/12/corgi-top-1400x871.jpg" alt="corgi" title="corgi" id="photo" width="50%"></a><!--Mark's comment: you have an id attribute in the img element, but no corresponding #img style. There is a .img style which specifies a class not id, but also don't name classes and ids after tag names. Did you all read the first few entries for CSS on w3schools? You should. This one in particular may help clarify: https://www.w3schools.com/css/css_selectors.asp-->
 <!--paragraph description of corgi (maya)-->   
-<h2 id="corg">Pembroke Welsh Corgi</h2>
     <p id="para">Corgis are <span id="affectionate">affectionate, cute, and friendly</span> dogs that have strong athletic capabilities. 
         They weigh 27 to 30 pounds and come in a range of colors from red, sable, fawn, black, 
         tan, and white. </p> 
@@ -416,7 +424,7 @@ equal the height. The length of head, neck and legs should be porportionate to t
 </div>
 
  <!--div for pug dog breed (Alex)-->
- <div class="Pug" id="pug"><!--Mark's comment 5/15: I stopped reviewing after seeing yet another style block, followed by another html tag...-->
+ <div class="Pug">
      
 <!--removed extra tags and moved style to top block(maya)-->
     <div class="container mt-3">
@@ -503,7 +511,7 @@ equal the height. The length of head, neck and legs should be porportionate to t
         <li><strong>Physical</strong></li>
           <ul>
             <li><em>Shed quite a lot</em></li>
-            <li><em>Only need to groom every few days to ever week</em></li>
+            <li><em>Only need to groom every few days to every week</em></li>
             <li><em>Not very likely to drool</em></li>
           </ul>
         <li><strong>Social</strong></li>
